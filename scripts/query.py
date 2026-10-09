@@ -27,6 +27,19 @@ from embed import embed_chunks  # noqa: E402
 
 VECTOR_DIR = ROOT / "knowledge" / ".vector"
 
+# tag 中文别名 → 规范 tag,方便调用(对齐三 Agent 动词化命名)
+TAG_ALIASES = {
+    "本质": "第一性原理", "判断": "第一性原理", "essence": "第一性原理", "第一性": "第一性原理",
+    "拆解": "MECE", "分解": "MECE", "decompose": "MECE", "分类": "MECE",
+    "聚焦": "8020", "取舍": "8020", "focus": "8020", "80/20": "8020", "帕累托": "8020",
+}
+
+
+def normalize_tag(tag: str | None) -> str | None:
+    if tag is None:
+        return None
+    return TAG_ALIASES.get(tag, tag)
+
 
 def cosine(a: np.ndarray, b: np.ndarray) -> float:
     a = a.astype("float32"); b = b.astype("float32")
@@ -66,12 +79,14 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("query")
     ap.add_argument("--top", type=int, default=5)
-    ap.add_argument("--tag", type=str, default=None, help="只检索指定主题的知识块(如 第一性原理/MECE/8020)")
+    ap.add_argument("--tag", type=str, default=None,
+                    help="只检索指定主题的知识块(支持别名:第一性原理/本质, MECE/拆解, 8020/聚焦)")
     args = ap.parse_args()
 
-    tag_hint = f" [tag:{args.tag}]" if args.tag else ""
+    tag = normalize_tag(args.tag)
+    tag_hint = f" [tag:{tag}]" if tag else ""
     print(f"🔍 检索:「{args.query}」{tag_hint}\n")
-    for r in search(args.query, args.top, args.tag):
+    for r in search(args.query, args.top, tag):
         preview = r["text"].replace("\n", " ")[:80]
         print(f"  {r['score']:.3f}  [{r['tag']}] {r['source']} → {r['note']}")
         print(f"      {preview}\n")

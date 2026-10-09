@@ -11,22 +11,22 @@
 
 ## 架构
 
-本 SKILL 是三 Agent 多智能体架构,按金字塔原理「总—分」组织:
+本 SKILL 是三 Agent 多智能体架构,按金字塔原理「总—分」组织,三个 Agent 用动词化命名,易读易调用:
 
 ```
 编排器(SKILL.md)→ 判断问题 / 编排三步
     │
-    ├─ ① 第一性原理 Agent  价值判断(以终为始 / 3P / 找服务对象)
-    ├─ ② MECE Agent        不重不漏拆解(五种分类法 / 价值全景图)
-    └─ ③ 80/20 Agent       聚焦核心(舍九取一 / 四个信号 / 聚焦宣言)
+    ├─ ① essence    本质判断(第一性原理:归零/追问/3P/找服务对象)
+    ├─ ② decompose  拆解(MECE:五种分类法 / 价值全景图)
+    └─ ③ focus      聚焦(80/20:舍九取一 / 四个信号 / 聚焦宣言)
 ```
 
-三个 Agent 各自聚焦单一能力,通过 `query.py --tag` 只检索自己领域的知识块:
+三个 Agent 各自聚焦单一能力,通过 `query.py --tag` 只检索自己领域的知识块(支持中文别名):
 
 ```bash
-python scripts/query.py "问题" --tag 第一性原理   # ①
-python scripts/query.py "问题" --tag MECE        # ②
-python scripts/query.py "问题" --tag 8020        # ③
+python scripts/query.py "问题" --tag 第一性原理   # ① essence(别名:本质)
+python scripts/query.py "问题" --tag MECE        # ② decompose(别名:拆解)
+python scripts/query.py "问题" --tag 8020        # ③ focus(别名:聚焦)
 ```
 
 流水线协作时,① 输出「根 + 服务对象」→ ② 输出「价值全景图」→ ③ 输出「聚焦宣言」。详见 [SKILL.md](SKILL.md) 和各子 Agent 的 [SKILL.md](agents/)。
@@ -112,9 +112,9 @@ python scripts/query.py "舍九取一找突破点" --tag 8020 --top 3
 structured-thinking-Agent/
 ├── SKILL.md                 # 编排器(多 Agent 架构总入口)
 ├── agents/                  # 三个子 Agent,各自聚焦单一能力
-│   ├── first-principles/    # ① 第一性原理 Agent(价值判断)
-│   ├── mece/                # ② MECE Agent(不重不漏拆解)
-│   └── 8020/                # ③ 80/20 Agent(聚焦核心)
+│   ├── essence/             # ① 本质判断(第一性原理)
+│   ├── decompose/           # ② 拆解(MECE 不重不漏)
+│   └── focus/               # ③ 聚焦(80/20 核心)
 ├── README.md                # 本文件
 ├── LICENSE                  # MIT 许可证
 ├── requirements.txt
@@ -122,7 +122,7 @@ structured-thinking-Agent/
 ├── scripts/
 │   ├── embed.py             # 分块 + 嵌入的纯函数
 │   ├── ingest.py            # 源文档 → Obsidian 笔记 + 向量索引
-│   └── query.py             # 语义检索(支持 --tag 过滤)
+│   └── query.py             # 语义检索(支持 --tag 过滤 + 中文别名)
 └── knowledge/               # 生成的知识库
     ├── 结构化思维Agent.md   # MOC 索引页(学习路径组织)
     ├── notes/               # 每篇笔记 = 一个语义块
