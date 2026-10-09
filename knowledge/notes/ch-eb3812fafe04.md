@@ -2,7 +2,7 @@
 id: ch-eb3812fafe04
 source: "结构化产品思维"
 index: 8
-tags: ["结构化思维AI助手", "MECE"]
+tags: ["结构化思维Agent", "MECE"]
 ---
 
 # MECE·结构化产品思维·ch-eb3812fafe04

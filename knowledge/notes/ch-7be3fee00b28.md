@@ -2,7 +2,7 @@
 id: ch-7be3fee00b28
 source: "价值模型"
 index: 27
-tags: ["结构化思维AI助手", "价值模型"]
+tags: ["结构化思维Agent", "价值模型"]
 ---
 
 # 价值模型·价值模型·ch-7be3fee00b28

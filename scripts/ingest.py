@@ -94,7 +94,7 @@ def build_note(chunk: dict, title: str) -> str:
         f"id: {chunk['id']}\n"
         f"source: \"{chunk['source']}\"\n"
         f"index: {chunk['index']}\n"
-        f"tags: [\"结构化思维AI助手\", \"{tag}\"]\n"
+        f"tags: [\"结构化思维Agent\", \"{tag}\"]\n"
         "---\n\n"
         f"# {note_title}\n\n"
         f"> 来源:[[{chunk['source']}]] · 分块 {chunk['index']}\n\n"
@@ -186,10 +186,10 @@ def write_moc(meta: list[dict], sources: list[dict]) -> None:
 
     lines = [
         "---",
-        "tags: [结构化思维AI助手, MOC]",
+        "tags: [结构化思维Agent, MOC]",
         "---",
         "",
-        "# 结构化思维 AI 助手 · 知识库索引",
+        "# 结构化思维 Agent · 知识库索引",
         "",
         "> 由 `scripts/ingest.py` 自动生成。人浏览入口;机器检索走 `.vector/` 向量索引。",
         "",
@@ -215,7 +215,7 @@ def write_moc(meta: list[dict], sources: list[dict]) -> None:
     for s in sources:
         lines.append(f"- **{s['source']}**(`{s['file']}`,{s['chunks']} 块)")
 
-    (KNOWLEDGE_DIR / "结构化思维AI助手.md").write_text("\n".join(lines), encoding="utf-8")
+    (KNOWLEDGE_DIR / "结构化思维Agent.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 id: ch-b27a2be17f7a
 source: "结构化产品思维"
 index: 18
-tags: ["结构化思维AI助手", "案例"]
+tags: ["结构化思维Agent", "案例"]
 ---
 
 # 案例·结构化产品思维·ch-b27a2be17f7a

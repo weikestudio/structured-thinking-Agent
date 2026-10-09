@@ -2,7 +2,7 @@
 id: ch-cd06f0a7bead
 source: "结构化产品思维"
 index: 1
-tags: ["结构化思维AI助手", "结构化思维"]
+tags: ["结构化思维Agent", "结构化思维"]
 ---
 
 # 结构化思维·结构化产品思维·ch-cd06f0a7bead

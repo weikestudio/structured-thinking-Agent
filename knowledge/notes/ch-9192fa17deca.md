@@ -2,7 +2,7 @@
 id: ch-9192fa17deca
 source: "价值模型"
 index: 29
-tags: ["结构化思维AI助手", "价值模型"]
+tags: ["结构化思维Agent", "价值模型"]
 ---
 
 # 价值模型·价值模型·ch-9192fa17deca

@@ -2,7 +2,7 @@
 id: ch-a70f81b46fce
 source: "结构化产品思维"
 index: 15
-tags: ["结构化思维AI助手", "8020"]
+tags: ["结构化思维Agent", "8020"]
 ---
 
 # 8020·结构化产品思维·ch-a70f81b46fce

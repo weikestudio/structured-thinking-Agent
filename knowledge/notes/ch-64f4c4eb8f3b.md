@@ -2,7 +2,7 @@
 id: ch-64f4c4eb8f3b
 source: "价值模型"
 index: 26
-tags: ["结构化思维AI助手", "价值模型"]
+tags: ["结构化思维Agent", "价值模型"]
 ---
 
 # 价值模型·价值模型·ch-64f4c4eb8f3b

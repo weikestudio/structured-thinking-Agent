@@ -1,8 +1,8 @@
 ---
-tags: [结构化思维AI助手, MOC]
+tags: [结构化思维Agent, MOC]
 ---
 
-# 结构化思维 AI 助手 · 知识库索引
+# 结构化思维 Agent · 知识库索引
 
 > 由 `scripts/ingest.py` 自动生成。人浏览入口;机器检索走 `.vector/` 向量索引。
 

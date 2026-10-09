@@ -2,7 +2,7 @@
 id: ch-4afa3f2a69f8
 source: "第五篇 使用结构化思维构建你的业务全景图"
 index: 20
-tags: ["结构化思维AI助手", "MECE"]
+tags: ["结构化思维Agent", "MECE"]
 ---
 
 # MECE·第五篇-使用结构化思维构建你的业务全景图·ch-4afa3f2a69f8

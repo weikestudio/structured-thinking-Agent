@@ -2,7 +2,7 @@
 id: ch-cce412d47de8
 source: "价值模型"
 index: 6
-tags: ["结构化思维AI助手", "价值模型"]
+tags: ["结构化思维Agent", "价值模型"]
 ---
 
 # 价值模型·价值模型·ch-cce412d47de8

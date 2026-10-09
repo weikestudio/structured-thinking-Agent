@@ -2,7 +2,7 @@
 id: ch-a6bd71c1a47c
 source: "结构化产品思维"
 index: 2
-tags: ["结构化思维AI助手", "MECE"]
+tags: ["结构化思维Agent", "MECE"]
 ---
 
 # MECE·结构化产品思维·ch-a6bd71c1a47c

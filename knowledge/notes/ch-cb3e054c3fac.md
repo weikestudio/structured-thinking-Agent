@@ -2,7 +2,7 @@
 id: ch-cb3e054c3fac
 source: "价值模型"
 index: 21
-tags: ["结构化思维AI助手", "价值模型"]
+tags: ["结构化思维Agent", "价值模型"]
 ---
 
 # 价值模型·价值模型·ch-cb3e054c3fac

@@ -2,7 +2,7 @@
 id: ch-87904bbc9aba
 source: "结构化产品思维"
 index: 9
-tags: ["结构化思维AI助手", "第一性原理"]
+tags: ["结构化思维Agent", "第一性原理"]
 ---
 
 # 第一性原理·结构化产品思维·ch-87904bbc9aba

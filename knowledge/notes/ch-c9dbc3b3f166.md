@@ -2,7 +2,7 @@
 id: ch-c9dbc3b3f166
 source: "结构化产品思维"
 index: 5
-tags: ["结构化思维AI助手", "金字塔原理"]
+tags: ["结构化思维Agent", "金字塔原理"]
 ---
 
 # 金字塔原理·结构化产品思维·ch-c9dbc3b3f166
