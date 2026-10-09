@@ -1,12 +1,35 @@
-# 结构化思维 Agent · 知识库 SKILL
+# 结构化思维 Agent · 多智能体知识库 SKILL
 
-一个可离线运行的本地语义知识库,把威克的结构化思维方法论(第一性原理 / MECE / 80/20 / 金字塔原理 / 价值模型 / 业务全景图)做成语义检索,供 AI 或人查询。
+一个可离线运行的本地语义知识库,把威克的结构化思维方法论(第一性原理 / MECE / 80/20 / 金字塔原理 / 价值模型 / 业务全景图)做成**多 Agent 架构**,供 AI 或人查询。
 
 结构化思维不只用于产品管理,它是一套通用的「想清楚再发力」的方法,适用于产品、职业定位、创业、管理、人生选择等任何需要结构化决策的场景。
 
+- **多 Agent 架构**:三步 = 三个独立 Agent(第一性原理 / MECE / 80/20),可独立干活,也可流水线协作
 - **零 API key**:本地中文嵌入模型(BGE),clone 下来 `pip install` 即可用
 - **双形态**:Obsidian 可读的 Markdown 笔记(人看)+ 向量索引(机器检索)
 - **纯 Python**:嵌入 + 摄取 + 检索三件事,两个脚本搞定
+
+## 架构
+
+本 SKILL 是三 Agent 多智能体架构,按金字塔原理「总—分」组织:
+
+```
+编排器(SKILL.md)→ 判断问题 / 编排三步
+    │
+    ├─ ① 第一性原理 Agent  价值判断(以终为始 / 3P / 找服务对象)
+    ├─ ② MECE Agent        不重不漏拆解(五种分类法 / 价值全景图)
+    └─ ③ 80/20 Agent       聚焦核心(舍九取一 / 四个信号 / 聚焦宣言)
+```
+
+三个 Agent 各自聚焦单一能力,通过 `query.py --tag` 只检索自己领域的知识块:
+
+```bash
+python scripts/query.py "问题" --tag 第一性原理   # ①
+python scripts/query.py "问题" --tag MECE        # ②
+python scripts/query.py "问题" --tag 8020        # ③
+```
+
+流水线协作时,① 输出「根 + 服务对象」→ ② 输出「价值全景图」→ ③ 输出「聚焦宣言」。详见 [SKILL.md](SKILL.md) 和各子 Agent 的 [SKILL.md](agents/)。
 
 ## 内容来源
 
@@ -72,13 +95,22 @@ python scripts/query.py "MECE 有哪些分类方法" --top 3
 python scripts/query.py "MECE 有哪些分类方法" --top 5
 python scripts/query.py "怎么找到自己的核心价值点" --top 5
 python scripts/query.py "接手一个新业务怎么快速上手" --top 5
+
+# 按 Agent 领域聚焦检索(tag 过滤)
+python scripts/query.py "找服务对象" --tag 第一性原理 --top 3
+python scripts/query.py "五种分类法" --tag MECE --top 3
+python scripts/query.py "舍九取一找突破点" --tag 8020 --top 3
 ```
 
 ## 项目结构
 
 ```
 structured-thinking-Agent/
-├── SKILL.md                 # SKILL 定义(给 AI 的用法说明)
+├── SKILL.md                 # 编排器(多 Agent 架构总入口)
+├── agents/                  # 三个子 Agent,各自聚焦单一能力
+│   ├── first-principles/    # ① 第一性原理 Agent(价值判断)
+│   ├── mece/                # ② MECE Agent(不重不漏拆解)
+│   └── 8020/                # ③ 80/20 Agent(聚焦核心)
 ├── README.md                # 本文件
 ├── LICENSE                  # MIT 许可证
 ├── requirements.txt
@@ -86,7 +118,7 @@ structured-thinking-Agent/
 ├── scripts/
 │   ├── embed.py             # 分块 + 嵌入的纯函数
 │   ├── ingest.py            # 源文档 → Obsidian 笔记 + 向量索引
-│   └── query.py             # 语义检索
+│   └── query.py             # 语义检索(支持 --tag 过滤)
 └── knowledge/               # 生成的知识库
     ├── 结构化思维Agent.md   # MOC 索引页(学习路径组织)
     ├── notes/               # 每篇笔记 = 一个语义块

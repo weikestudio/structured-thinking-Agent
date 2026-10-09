@@ -2,10 +2,10 @@
 id: ch-7be3fee00b28
 source: "价值模型"
 index: 27
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "8020"]
 ---
 
-# 价值模型·价值模型·ch-7be3fee00b28
+# 8020·价值模型·ch-7be3fee00b28
 
 > 来源:[[价值模型]] · 分块 27
 

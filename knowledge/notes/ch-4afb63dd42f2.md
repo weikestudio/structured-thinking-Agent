@@ -2,10 +2,10 @@
 id: ch-4afb63dd42f2
 source: "价值模型"
 index: 9
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "结构化思维"]
 ---
 
-# 价值模型·价值模型·ch-4afb63dd42f2
+# 结构化思维·价值模型·ch-4afb63dd42f2
 
 > 来源:[[价值模型]] · 分块 9
 

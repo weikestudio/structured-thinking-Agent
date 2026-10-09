@@ -2,10 +2,10 @@
 id: ch-c7f27fb812da
 source: "价值模型"
 index: 24
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "8020"]
 ---
 
-# 价值模型·价值模型·ch-c7f27fb812da
+# 8020·价值模型·ch-c7f27fb812da
 
 > 来源:[[价值模型]] · 分块 24
 

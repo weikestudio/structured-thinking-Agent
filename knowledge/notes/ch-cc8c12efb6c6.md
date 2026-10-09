@@ -2,10 +2,10 @@
 id: ch-cc8c12efb6c6
 source: "价值模型"
 index: 11
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "MECE"]
 ---
 
-# 价值模型·价值模型·ch-cc8c12efb6c6
+# MECE·价值模型·ch-cc8c12efb6c6
 
 > 来源:[[价值模型]] · 分块 11
 

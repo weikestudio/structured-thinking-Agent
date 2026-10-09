@@ -2,10 +2,10 @@
 id: ch-14d0b7ccccfa
 source: "结构化产品思维"
 index: 19
-tags: ["结构化思维Agent", "案例"]
+tags: ["结构化思维Agent", "工具案例"]
 ---
 
-# 案例·结构化产品思维·ch-14d0b7ccccfa
+# 工具案例·结构化产品思维·ch-14d0b7ccccfa
 
 > 来源:[[结构化产品思维]] · 分块 19
 

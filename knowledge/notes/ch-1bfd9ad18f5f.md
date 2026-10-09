@@ -2,10 +2,10 @@
 id: ch-1bfd9ad18f5f
 source: "价值模型"
 index: 14
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "第一性原理"]
 ---
 
-# 价值模型·价值模型·ch-1bfd9ad18f5f
+# 第一性原理·价值模型·ch-1bfd9ad18f5f
 
 > 来源:[[价值模型]] · 分块 14
 

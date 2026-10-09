@@ -2,10 +2,10 @@
 id: ch-9192fa17deca
 source: "价值模型"
 index: 29
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "8020"]
 ---
 
-# 价值模型·价值模型·ch-9192fa17deca
+# 8020·价值模型·ch-9192fa17deca
 
 > 来源:[[价值模型]] · 分块 29
 

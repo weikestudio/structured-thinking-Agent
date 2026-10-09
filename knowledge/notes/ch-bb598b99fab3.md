@@ -2,10 +2,10 @@
 id: ch-bb598b99fab3
 source: "价值模型"
 index: 4
-tags: ["结构化思维Agent", "价值模型"]
+tags: ["结构化思维Agent", "第一性原理"]
 ---
 
-# 价值模型·价值模型·ch-bb598b99fab3
+# 第一性原理·价值模型·ch-bb598b99fab3
 
 > 来源:[[价值模型]] · 分块 4
 
